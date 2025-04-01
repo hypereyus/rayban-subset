@@ -772,7 +772,7 @@ def health_check():
   return jsonify({"status": "ok", "message": "Server is running"})
 
 if __name__ == '__main__':
-  port = int(os.environ.get('PORT', 5000))
-  logger.info(f"Starting server on port {port}")
-  app.run(host='0.0.0.0', port=port, debug=False)  # Set debug to False for production
+    port = int(os.environ.get('PORT', 8080))
+    logger.info(f"Starting server on port {port}")
+    app.run(host='0.0.0.0', port=port, debug=False)
 
