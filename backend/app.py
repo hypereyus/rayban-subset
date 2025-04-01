@@ -43,6 +43,10 @@ def index():
       }
   })
 
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({"status": "ok"})
+
 # Ray-Ban sunglasses database
 def get_sunglasses_database():
   return [
@@ -775,4 +779,3 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8080))
     logger.info(f"Starting server on port {port}")
     app.run(host='0.0.0.0', port=port, debug=False)
-
