@@ -1,0 +1,1720 @@
+2025-03-31 12:12:27,380 - __main__ - INFO - Starting server on port 5000
+2025-03-31 12:12:27,470 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 12:12:27,472 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 12:12:27,476 - werkzeug - INFO -  * Restarting with stat
+2025-03-31 12:12:30,409 - __main__ - INFO - Starting server on port 5000
+2025-03-31 12:12:30,478 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 12:12:30,505 - werkzeug - INFO -  * Debugger PIN: 616-816-114
+2025-03-31 12:12:37,712 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:12:37] "GET / HTTP/1.1" 200 -
+2025-03-31 12:12:46,620 - __main__ - INFO - Received health check request
+2025-03-31 12:12:46,624 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:12:46] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:12:46,848 - __main__ - INFO - Received health check request
+2025-03-31 12:12:46,850 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:12:46] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:13:18,296 - __main__ - INFO - Received health check request
+2025-03-31 12:13:18,331 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:13:18,672 - __main__ - INFO - Received health check request
+2025-03-31 12:13:18,682 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:13:19,820 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:19] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:13:20,136 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:20] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:13:20,162 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:13:20,170 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:13:20,189 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 12:13:20,204 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 12:13:20,254 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:13:20,254 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 12:13:20,255 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 12:13:20,255 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 12:13:20,256 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 12:13:20,258 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 12:13:20,258 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 12:13:20,259 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:13:20,259 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 12:13:20,260 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 12:13:20,260 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 12:13:20,261 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:13:20,261 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:13:20,262 - __main__ - INFO - OBLONG: Longer face with similar width at forehead and jaw
+2025-03-31 12:13:20,262 - __main__ - INFO - - Width/height ratio: 0.78 < 0.8
+2025-03-31 12:13:20,265 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.1
+2025-03-31 12:13:20,265 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 12:13:20,338 - __main__ - INFO - Saved debug visualization to debug_face_1743416000.jpg
+2025-03-31 12:13:20,346 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 12:13:20,353 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:13:20,356 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:20] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:13:20,455 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:13:20,464 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:13:20,485 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 12:13:20,487 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 12:13:20,527 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:13:20,529 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 12:13:20,530 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 12:13:20,531 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 12:13:20,533 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 12:13:20,534 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 12:13:20,534 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 12:13:20,535 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:13:20,535 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 12:13:20,553 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 12:13:20,554 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 12:13:20,554 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:13:20,555 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:13:20,555 - __main__ - INFO - OBLONG: Longer face with similar width at forehead and jaw
+2025-03-31 12:13:20,555 - __main__ - INFO - - Width/height ratio: 0.78 < 0.8
+2025-03-31 12:13:20,556 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.1
+2025-03-31 12:13:20,559 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 12:13:20,570 - __main__ - INFO - Saved debug visualization to debug_face_1743416000.jpg
+2025-03-31 12:13:20,596 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 12:13:20,598 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:13:20,604 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:20] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:13:21,913 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:13:21,954 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:13:21,989 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 12:13:22,000 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 12:13:22,054 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:13:22,056 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 12:13:22,064 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 12:13:22,066 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 12:13:22,066 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 12:13:22,066 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 12:13:22,068 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 12:13:22,068 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:13:22,068 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 12:13:22,070 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 12:13:22,070 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 12:13:22,070 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:13:22,072 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:13:22,072 - __main__ - INFO - OBLONG: Longer face with similar width at forehead and jaw
+2025-03-31 12:13:22,073 - __main__ - INFO - - Width/height ratio: 0.78 < 0.8
+2025-03-31 12:13:22,083 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.1
+2025-03-31 12:13:22,083 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 12:13:22,103 - __main__ - INFO - Saved debug visualization to debug_face_1743416002.jpg
+2025-03-31 12:13:22,117 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 12:13:22,117 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:13:22,119 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:13:22] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:14:53,726 - __main__ - INFO - Received health check request
+2025-03-31 12:14:53,753 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:53] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:14:53,963 - __main__ - INFO - Received health check request
+2025-03-31 12:14:53,978 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:53] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:14:54,937 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:54] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:14:55,282 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:14:55,294 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:14:55,303 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:14:55,310 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:14:55,461 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:14:55,482 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:14:55,492 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:14:55,512 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:14:55,524 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:14:55,556 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:14:55,579 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:14:55,580 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:55] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:14:55,591 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:14:55,632 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:55] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:14:56,182 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:14:56,195 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:14:56,256 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:14:56,259 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:14:56,273 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:14:56,274 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:14:56,276 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:56] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:14:59,469 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:14:59,474 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:14:59,474 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:14:59,489 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:14:59,537 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:14:59,541 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:14:59,545 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:14:59,554 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:14:59,569 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:14:59,569 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:14:59,570 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:14:59,571 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:14:59,573 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:59] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:14:59,575 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:14:59] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:01,170 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:01] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:15:01,574 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:01,576 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:01] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:15:01,663 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:01,729 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:01,732 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:01,739 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:01,739 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:01,739 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:01] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:01,889 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:01,898 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:01,954 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:01,958 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:01,972 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:01,973 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:01,974 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:01] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:09,527 - __main__ - INFO - Received health check request
+2025-03-31 12:15:09,529 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:09] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:15:09,794 - __main__ - INFO - Received health check request
+2025-03-31 12:15:09,797 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:09] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:15:18,759 - __main__ - INFO - Received health check request
+2025-03-31 12:15:18,799 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:15:19,131 - __main__ - INFO - Received health check request
+2025-03-31 12:15:19,141 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:19] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:15:20,592 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:20] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:15:20,631 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:20] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:15:20,862 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:20,872 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:20,908 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:20,913 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:20,931 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:20,938 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:20,960 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:20,961 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:20,963 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:20] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:21,026 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:21,090 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:21,111 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:21,122 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:21,125 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:21] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:21,175 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:21,193 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:21,343 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:21,361 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:21,388 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:21,391 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:21,396 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:21] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:24,837 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:24,842 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:24,842 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:24,856 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:24,920 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:24,926 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:24,930 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:24,942 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:24,958 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:24,958 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:24,959 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:24,960 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:24,977 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:24] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:24,980 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:24] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:26,543 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:26] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:15:26,861 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:26,880 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:26,883 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:26,897 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:26,976 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:26,978 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:26,981 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:26,992 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:26,998 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:27,007 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:27,025 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:27] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:27,043 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:27,044 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:27,047 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:27] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:45,079 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:45] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:15:45,394 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:45,394 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:45,442 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:15:45,446 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:15:45,456 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:45,461 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:45,472 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:45,474 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:45,474 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:45] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:15:45,548 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 12:15:45,561 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 12:15:45,584 - __main__ - WARNING - No face detected in the image
+2025-03-31 12:15:45,595 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 12:15:45,597 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:15:45] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 12:16:19,683 - __main__ - INFO - Received health check request
+2025-03-31 12:16:19,697 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:19] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:16:20,025 - __main__ - INFO - Received health check request
+2025-03-31 12:16:20,025 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:20] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:16:34,768 - __main__ - INFO - Received health check request
+2025-03-31 12:16:34,838 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:34] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:16:35,211 - __main__ - INFO - Received health check request
+2025-03-31 12:16:35,230 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:35] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:16:36,270 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:36] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:16:36,598 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:36] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:16:36,604 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:16:36,605 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:16:36,634 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 12:16:36,637 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 12:16:36,665 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:16:36,665 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 12:16:36,665 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 12:16:36,666 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 12:16:36,666 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 12:16:36,666 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 12:16:36,666 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 12:16:36,667 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:16:36,667 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 12:16:36,667 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 12:16:36,667 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 12:16:36,667 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:16:36,668 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:16:36,668 - __main__ - INFO - OVAL: Default face shape (no other conditions met)
+2025-03-31 12:16:36,668 - __main__ - INFO - - Width/height ratio: 0.86
+2025-03-31 12:16:36,668 - __main__ - INFO - - Forehead ratio: 0.88
+2025-03-31 12:16:36,669 - __main__ - INFO - - Cheekbone ratio: 0.88
+2025-03-31 12:16:36,669 - __main__ - INFO - - Jaw ratio: 1.00
+2025-03-31 12:16:36,669 - __main__ - INFO - Final determined face shape: Oval
+2025-03-31 12:16:36,734 - __main__ - INFO - Saved debug visualization to debug_face_1743416196.jpg
+2025-03-31 12:16:36,737 - __main__ - INFO - Face analysis successful, detected shape: Oval
+2025-03-31 12:16:36,739 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:16:36,752 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:36] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:16:36,916 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:16:36,917 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:16:36,944 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 12:16:36,950 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 12:16:36,962 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:16:36,978 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 12:16:36,980 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 12:16:36,980 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 12:16:36,981 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 12:16:36,982 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 12:16:36,983 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 12:16:36,983 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:16:36,983 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 12:16:36,984 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 12:16:36,984 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 12:16:36,984 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:16:36,985 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:16:36,985 - __main__ - INFO - OVAL: Default face shape (no other conditions met)
+2025-03-31 12:16:36,985 - __main__ - INFO - - Width/height ratio: 0.86
+2025-03-31 12:16:36,985 - __main__ - INFO - - Forehead ratio: 0.88
+2025-03-31 12:16:36,986 - __main__ - INFO - - Cheekbone ratio: 0.88
+2025-03-31 12:16:36,986 - __main__ - INFO - - Jaw ratio: 1.00
+2025-03-31 12:16:36,986 - __main__ - INFO - Final determined face shape: Oval
+2025-03-31 12:16:37,038 - __main__ - INFO - Saved debug visualization to debug_face_1743416196.jpg
+2025-03-31 12:16:37,040 - __main__ - INFO - Face analysis successful, detected shape: Oval
+2025-03-31 12:16:37,041 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:16:37,044 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:37] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:16:38,152 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:16:38,154 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:16:38,553 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 12:16:38,618 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 12:16:38,745 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:16:38,745 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 12:16:38,748 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 12:16:38,752 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 12:16:38,752 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 12:16:38,770 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 12:16:38,778 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 12:16:38,780 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:16:38,802 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 12:16:38,820 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 12:16:38,821 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 12:16:38,823 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:16:38,849 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:16:38,853 - __main__ - INFO - OVAL: Default face shape (no other conditions met)
+2025-03-31 12:16:38,856 - __main__ - INFO - - Width/height ratio: 0.86
+2025-03-31 12:16:38,869 - __main__ - INFO - - Forehead ratio: 0.88
+2025-03-31 12:16:38,871 - __main__ - INFO - - Cheekbone ratio: 0.88
+2025-03-31 12:16:38,872 - __main__ - INFO - - Jaw ratio: 1.00
+2025-03-31 12:16:38,872 - __main__ - INFO - Final determined face shape: Oval
+2025-03-31 12:16:38,987 - __main__ - INFO - Saved debug visualization to debug_face_1743416198.jpg
+2025-03-31 12:16:39,005 - __main__ - INFO - Face analysis successful, detected shape: Oval
+2025-03-31 12:16:39,006 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:16:39,022 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:16:39] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:22:42,358 - __main__ - INFO - Starting server on port 5000
+2025-03-31 12:22:42,440 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 12:22:42,440 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 12:22:42,446 - werkzeug - INFO -  * Restarting with stat
+2025-03-31 12:22:45,357 - __main__ - INFO - Starting server on port 5000
+2025-03-31 12:22:45,421 - werkzeug - WARNING -  * Debugger is active!
+2025-03-31 12:22:45,431 - werkzeug - INFO -  * Debugger PIN: 616-816-114
+2025-03-31 12:22:51,112 - __main__ - INFO - Received health check request
+2025-03-31 12:22:51,116 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:22:51] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:22:51,378 - __main__ - INFO - Received health check request
+2025-03-31 12:22:51,380 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:22:51] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:23:02,078 - __main__ - INFO - Received health check request
+2025-03-31 12:23:02,082 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:02] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:23:02,400 - __main__ - INFO - Received health check request
+2025-03-31 12:23:02,400 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:02] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:23:03,598 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:03] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:03,910 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:23:03,915 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:23:03,928 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:23:03,930 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:23:03,943 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 12:23:03,960 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 12:23:03,964 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 12:23:03,970 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 12:23:04,026 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:23:04,026 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:23:04,026 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 12:23:04,026 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 12:23:04,026 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 12:23:04,026 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:23:04,041 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:23:04,041 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 12:23:04,043 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 12:23:04,046 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 12:23:04,046 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 12:23:04,046 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 12:23:04,046 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:23:04,046 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 12:23:04,046 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:23:04,046 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:23:04,046 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 12:23:04,046 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:23:04,046 - __main__ - INFO - - Jaw angle: 139.49 < 160 (angular jaw)
+2025-03-31 12:23:04,046 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 12:23:04,046 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 12:23:04,046 - __main__ - INFO - - Jaw angle: 139.49 < 160 (angular jaw)
+2025-03-31 12:23:04,046 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 12:23:04,046 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 12:23:04,046 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 12:23:04,046 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 12:23:04,046 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 12:23:04,086 - __main__ - INFO - Saved debug visualization to debug_face_1743416584.jpg
+2025-03-31 12:23:04,094 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 12:23:04,098 - __main__ - INFO - Saved debug visualization to debug_face_1743416584.jpg
+2025-03-31 12:23:04,098 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:23:04,101 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 12:23:04,105 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:04] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:04,108 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:23:04,115 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:04] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:04,795 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:23:04,801 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:23:04,981 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 12:23:05,048 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 12:23:05,111 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:23:05,113 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 12:23:05,113 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 12:23:05,113 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 12:23:05,115 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 12:23:05,115 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 12:23:05,115 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 12:23:05,115 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 12:23:05,115 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:23:05,115 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 12:23:05,117 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 12:23:05,117 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 12:23:05,117 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:23:05,117 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:23:05,117 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 12:23:05,117 - __main__ - INFO - - Jaw angle: 139.49 < 160 (angular jaw)
+2025-03-31 12:23:05,119 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 12:23:05,119 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 12:23:05,119 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 12:23:05,184 - __main__ - INFO - Saved debug visualization to debug_face_1743416585.jpg
+2025-03-31 12:23:05,198 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 12:23:05,200 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:23:05,202 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:05] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:24,446 - __main__ - INFO - Received health check request
+2025-03-31 12:23:24,446 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:24] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:23:24,717 - __main__ - INFO - Received health check request
+2025-03-31 12:23:24,717 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:24] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 12:23:25,641 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:25] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:25,949 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:25] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:25,954 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:23:25,954 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:23:25,966 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 12:23:25,968 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 12:23:25,997 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:23:25,997 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 12:23:25,997 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 12:23:25,997 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 12:23:25,997 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 12:23:25,997 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 12:23:25,997 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 12:23:25,997 - __main__ - INFO - Jaw Angle: 113.09 degrees
+2025-03-31 12:23:25,997 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:23:25,997 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 12:23:25,997 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 12:23:25,997 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 12:23:25,997 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:23:25,997 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:23:25,997 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 12:23:25,997 - __main__ - INFO - - Jaw angle: 113.09 < 160 (angular jaw)
+2025-03-31 12:23:25,997 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.15
+2025-03-31 12:23:25,997 - __main__ - INFO - - Cheekbone to jaw difference: 0.09 < 0.15
+2025-03-31 12:23:25,997 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 12:23:26,013 - __main__ - INFO - Saved debug visualization to debug_face_1743416605.jpg
+2025-03-31 12:23:26,017 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 12:23:26,017 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:23:26,017 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:26] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:26,268 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:23:26,268 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:23:26,282 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 12:23:26,288 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 12:23:26,317 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:23:26,317 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 12:23:26,317 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 12:23:26,317 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 12:23:26,317 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 12:23:26,317 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 12:23:26,317 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 12:23:26,317 - __main__ - INFO - Jaw Angle: 113.09 degrees
+2025-03-31 12:23:26,317 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:23:26,317 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 12:23:26,331 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 12:23:26,333 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 12:23:26,333 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:23:26,333 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:23:26,333 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 12:23:26,333 - __main__ - INFO - - Jaw angle: 113.09 < 160 (angular jaw)
+2025-03-31 12:23:26,333 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.15
+2025-03-31 12:23:26,333 - __main__ - INFO - - Cheekbone to jaw difference: 0.09 < 0.15
+2025-03-31 12:23:26,333 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 12:23:26,354 - __main__ - INFO - Saved debug visualization to debug_face_1743416606.jpg
+2025-03-31 12:23:26,356 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 12:23:26,365 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:23:26,367 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:26] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:23:27,237 - __main__ - INFO - Received analyze-face request
+2025-03-31 12:23:27,380 - __main__ - INFO - Processing image from base64 data
+2025-03-31 12:23:27,704 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 12:23:27,753 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 12:23:28,090 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 12:23:28,184 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 12:23:28,204 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 12:23:28,236 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 12:23:28,254 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 12:23:28,256 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 12:23:28,284 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 12:23:28,284 - __main__ - INFO - Jaw Angle: 113.09 degrees
+2025-03-31 12:23:28,286 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 12:23:28,288 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 12:23:28,288 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 12:23:28,288 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 12:23:28,290 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 12:23:28,303 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 12:23:28,303 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 12:23:28,305 - __main__ - INFO - - Jaw angle: 113.09 < 160 (angular jaw)
+2025-03-31 12:23:28,305 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.15
+2025-03-31 12:23:28,305 - __main__ - INFO - - Cheekbone to jaw difference: 0.09 < 0.15
+2025-03-31 12:23:28,305 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 12:23:28,353 - __main__ - INFO - Saved debug visualization to debug_face_1743416608.jpg
+2025-03-31 12:23:28,367 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 12:23:28,369 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 12:23:28,382 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 12:23:28] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 12:34:27,623 - werkzeug - INFO -  * Detected change in 'C:\\Users\\RYZEN\\onedrive\\desktop\\Client Work\\rayban-subset\\backend\\app.py', reloading
+2025-03-31 12:34:28,989 - werkzeug - INFO -  * Restarting with stat
+2025-03-31 12:34:33,589 - __main__ - INFO - Starting server on port 5000
+2025-03-31 13:02:57,556 - __main__ - INFO - Received health check request
+2025-03-31 13:02:57,582 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:02:57] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:02:57,778 - __main__ - INFO - Received health check request
+2025-03-31 13:02:57,781 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:02:57] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:05:38,151 - __main__ - INFO - Received health check request
+2025-03-31 13:05:38,198 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:05:38] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:05:38,512 - __main__ - INFO - Received health check request
+2025-03-31 13:05:38,531 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:05:38] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:06:45,597 - __main__ - INFO - Starting server on port 5000
+2025-03-31 13:06:45,768 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 13:06:45,783 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 13:06:51,711 - werkzeug - INFO - 192.168.1.150 - - [31/Mar/2025 13:06:51] "GET / HTTP/1.1" 200 -
+2025-03-31 13:06:51,976 - werkzeug - INFO - 192.168.1.150 - - [31/Mar/2025 13:06:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 13:07:18,757 - __main__ - INFO - Received health check request
+2025-03-31 13:07:18,763 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:07:19,052 - __main__ - INFO - Received health check request
+2025-03-31 13:07:19,054 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:19] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:07:20,002 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:20] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:07:20,315 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:07:20,337 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:07:20,390 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:07:20,430 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:07:20,519 - __main__ - INFO - Image decoded successfully, shape: (3088, 2316, 3)
+2025-03-31 13:07:20,528 - __main__ - INFO - Image decoded successfully, shape: (3088, 2316, 3)
+2025-03-31 13:07:20,548 - __main__ - INFO - Analyzing face in image of size 2316x3088
+2025-03-31 13:07:20,572 - __main__ - INFO - Analyzing face in image of size 2316x3088
+2025-03-31 13:07:20,655 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:07:20,655 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:07:20,655 - __main__ - INFO - Face Height: 1047.42 pixels
+2025-03-31 13:07:20,655 - __main__ - INFO - Face Height: 1047.42 pixels
+2025-03-31 13:07:20,655 - __main__ - INFO - Forehead Width: 742.05 pixels
+2025-03-31 13:07:20,660 - __main__ - INFO - Forehead Width: 742.05 pixels
+2025-03-31 13:07:20,662 - __main__ - INFO - Cheekbone Width: 701.07 pixels
+2025-03-31 13:07:20,662 - __main__ - INFO - Cheekbone Width: 701.07 pixels
+2025-03-31 13:07:20,663 - __main__ - INFO - Jaw Width: 750.81 pixels
+2025-03-31 13:07:20,663 - __main__ - INFO - Jaw Width: 750.81 pixels
+2025-03-31 13:07:20,663 - __main__ - INFO - Eye Distance: 216.13 pixels
+2025-03-31 13:07:20,664 - __main__ - INFO - Eye Distance: 216.13 pixels
+2025-03-31 13:07:20,664 - __main__ - INFO - Eye Width: 549.41 pixels
+2025-03-31 13:07:20,664 - __main__ - INFO - Eye Width: 549.41 pixels
+2025-03-31 13:07:20,664 - __main__ - INFO - Jaw Angle: 113.19 degrees
+2025-03-31 13:07:20,665 - __main__ - INFO - Jaw Angle: 113.19 degrees
+2025-03-31 13:07:20,665 - __main__ - INFO - Jaw Curvature: 0.1953
+2025-03-31 13:07:20,665 - __main__ - INFO - Jaw Curvature: 0.1953
+2025-03-31 13:07:20,665 - __main__ - INFO - Chin to Cheek Ratio: 1.07
+2025-03-31 13:07:20,665 - __main__ - INFO - Chin to Cheek Ratio: 1.07
+2025-03-31 13:07:20,665 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:07:20,667 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:07:20,667 - __main__ - INFO - Width/Height Ratio: 0.72
+2025-03-31 13:07:20,667 - __main__ - INFO - Width/Height Ratio: 0.72
+2025-03-31 13:07:20,667 - __main__ - INFO - Forehead Ratio: 0.99
+2025-03-31 13:07:20,667 - __main__ - INFO - Forehead Ratio: 0.99
+2025-03-31 13:07:20,667 - __main__ - INFO - Cheekbone Ratio: 0.93
+2025-03-31 13:07:20,667 - __main__ - INFO - Cheekbone Ratio: 0.93
+2025-03-31 13:07:20,667 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:07:20,669 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:07:20,669 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:07:20,669 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:07:20,669 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:07:20,669 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:07:20,669 - __main__ - INFO - - Width/height ratio: 0.72 < 0.8 (longer face)
+2025-03-31 13:07:20,669 - __main__ - INFO - - Width/height ratio: 0.72 < 0.8 (longer face)
+2025-03-31 13:07:20,669 - __main__ - INFO - - Jaw angle: 113.19 < 160 (angular jaw)
+2025-03-31 13:07:20,669 - __main__ - INFO - - Jaw angle: 113.19 < 160 (angular jaw)
+2025-03-31 13:07:20,669 - __main__ - INFO - - Forehead to jaw difference: 0.01 < 0.15
+2025-03-31 13:07:20,669 - __main__ - INFO - - Forehead to jaw difference: 0.01 < 0.15
+2025-03-31 13:07:20,669 - __main__ - INFO - - Cheekbone to jaw difference: 0.07 < 0.15
+2025-03-31 13:07:20,669 - __main__ - INFO - - Cheekbone to jaw difference: 0.07 < 0.15
+2025-03-31 13:07:20,669 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:07:20,669 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:07:20,740 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:07:20,784 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:07:20,904 - __main__ - INFO - Saved debug visualization to debug_face_1743419240.jpg
+2025-03-31 13:07:20,906 - __main__ - INFO - Saved debug visualization to debug_face_1743419240.jpg
+2025-03-31 13:07:20,921 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:07:20,932 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:07:20,934 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:07:20,934 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:07:20,952 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:20] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:07:20,971 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:20] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:07:20,995 - __main__ - INFO - Image decoded successfully, shape: (3088, 2316, 3)
+2025-03-31 13:07:21,012 - __main__ - INFO - Analyzing face in image of size 2316x3088
+2025-03-31 13:07:21,073 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:07:21,075 - __main__ - INFO - Face Height: 1047.42 pixels
+2025-03-31 13:07:21,075 - __main__ - INFO - Forehead Width: 742.05 pixels
+2025-03-31 13:07:21,075 - __main__ - INFO - Cheekbone Width: 701.07 pixels
+2025-03-31 13:07:21,082 - __main__ - INFO - Jaw Width: 750.81 pixels
+2025-03-31 13:07:21,082 - __main__ - INFO - Eye Distance: 216.13 pixels
+2025-03-31 13:07:21,082 - __main__ - INFO - Eye Width: 549.41 pixels
+2025-03-31 13:07:21,084 - __main__ - INFO - Jaw Angle: 113.19 degrees
+2025-03-31 13:07:21,084 - __main__ - INFO - Jaw Curvature: 0.1953
+2025-03-31 13:07:21,084 - __main__ - INFO - Chin to Cheek Ratio: 1.07
+2025-03-31 13:07:21,084 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:07:21,084 - __main__ - INFO - Width/Height Ratio: 0.72
+2025-03-31 13:07:21,086 - __main__ - INFO - Forehead Ratio: 0.99
+2025-03-31 13:07:21,086 - __main__ - INFO - Cheekbone Ratio: 0.93
+2025-03-31 13:07:21,086 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:07:21,086 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:07:21,086 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:07:21,086 - __main__ - INFO - - Width/height ratio: 0.72 < 0.8 (longer face)
+2025-03-31 13:07:21,088 - __main__ - INFO - - Jaw angle: 113.19 < 160 (angular jaw)
+2025-03-31 13:07:21,088 - __main__ - INFO - - Forehead to jaw difference: 0.01 < 0.15
+2025-03-31 13:07:21,088 - __main__ - INFO - - Cheekbone to jaw difference: 0.07 < 0.15
+2025-03-31 13:07:21,088 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:07:21,238 - __main__ - INFO - Saved debug visualization to debug_face_1743419241.jpg
+2025-03-31 13:07:21,256 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:07:21,261 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:07:21,332 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:21] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:07:41,357 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:41] "OPTIONS /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:41,622 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:41,622 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12]
+2025-03-31 13:07:41,622 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:41,622 - __main__ - INFO - Returning 3 more recommendations
+2025-03-31 13:07:41,622 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:41] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:48,149 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:48] "OPTIONS /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:48,466 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:48,468 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12, 19, 13, 4]
+2025-03-31 13:07:48,468 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:48,468 - __main__ - INFO - Returning 3 more recommendations
+2025-03-31 13:07:48,468 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:48] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:51,077 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:51,085 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12, 19, 13, 4, 5, 15, 1]
+2025-03-31 13:07:51,085 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:51,085 - __main__ - INFO - Returning 3 more recommendations
+2025-03-31 13:07:51,085 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:51] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:52,266 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:52,266 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12, 19, 13, 4, 5, 15, 1, 18, 14, 2]
+2025-03-31 13:07:52,266 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:52,266 - __main__ - INFO - Returning 3 more recommendations
+2025-03-31 13:07:52,266 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:52] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:53,413 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:53] "OPTIONS /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:53,736 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:53,736 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12, 19, 13, 4, 5, 15, 1, 18, 14, 2, 11, 10, 20]
+2025-03-31 13:07:53,736 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:53,736 - __main__ - INFO - Returning 3 more recommendations
+2025-03-31 13:07:53,738 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:53] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:54,160 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:54,160 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12, 19, 13, 4, 5, 15, 1, 18, 14, 2, 11, 10, 20, 16, 7, 8]
+2025-03-31 13:07:54,164 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:54,166 - __main__ - INFO - Returning 2 more recommendations
+2025-03-31 13:07:54,166 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:54] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:07:55,150 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:07:55,150 - __main__ - INFO - Getting more recommendations for face shape: Oblong, excluding IDs: [17, 6, 12, 19, 13, 4, 5, 15, 1, 18, 14, 2, 11, 10, 20, 16, 7, 8, 9, 3]
+2025-03-31 13:07:55,150 - __main__ - INFO - No matching recommendations found, returning random models
+2025-03-31 13:07:55,150 - __main__ - INFO - Returning 0 more recommendations
+2025-03-31 13:07:55,150 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:07:55] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:08:20,750 - __main__ - INFO - Received health check request
+2025-03-31 13:08:20,758 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:08:20] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:08:21,093 - __main__ - INFO - Received health check request
+2025-03-31 13:08:21,095 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:08:21] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:08:22,238 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:08:22] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:08:22,563 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:08:22,570 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:08:22,596 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 13:08:22,600 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:08:22,612 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:08:22,624 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 13:08:22,706 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 13:08:22,712 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 13:08:22,760 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:08:22,762 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:08:22,762 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 13:08:22,762 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 13:08:22,768 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 13:08:22,770 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 13:08:22,770 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 13:08:22,770 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 13:08:22,772 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 13:08:22,772 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 13:08:22,772 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 13:08:22,772 - __main__ - INFO - Jaw Angle: 113.09 degrees
+2025-03-31 13:08:22,772 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 13:08:22,774 - __main__ - INFO - Jaw Curvature: 0.2018
+2025-03-31 13:08:22,774 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 13:08:22,774 - __main__ - INFO - Chin to Cheek Ratio: 1.10
+2025-03-31 13:08:22,774 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 13:08:22,774 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:08:22,774 - __main__ - INFO - Jaw Angle: 113.09 degrees
+2025-03-31 13:08:22,776 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 13:08:22,776 - __main__ - INFO - Jaw Curvature: 0.2018
+2025-03-31 13:08:22,776 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 13:08:22,776 - __main__ - INFO - Chin to Cheek Ratio: 1.10
+2025-03-31 13:08:22,776 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 13:08:22,776 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:08:22,778 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:08:22,778 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 13:08:22,780 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:08:22,780 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:08:22,786 - __main__ - INFO - - Width/height ratio: 0.78 < 0.8 (longer face)
+2025-03-31 13:08:22,786 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 13:08:22,786 - __main__ - INFO - - Jaw angle: 113.09 < 160 (angular jaw)
+2025-03-31 13:08:22,786 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 13:08:22,786 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.15
+2025-03-31 13:08:22,786 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:08:22,786 - __main__ - INFO - - Cheekbone to jaw difference: 0.09 < 0.15
+2025-03-31 13:08:22,786 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:08:22,791 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:08:22,792 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:08:22,793 - __main__ - INFO - - Width/height ratio: 0.78 < 0.8 (longer face)
+2025-03-31 13:08:22,794 - __main__ - INFO - - Jaw angle: 113.09 < 160 (angular jaw)
+2025-03-31 13:08:22,794 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.15
+2025-03-31 13:08:22,800 - __main__ - INFO - - Cheekbone to jaw difference: 0.09 < 0.15
+2025-03-31 13:08:22,804 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:08:22,806 - __main__ - INFO - Saved debug visualization to debug_face_1743419302.jpg
+2025-03-31 13:08:22,812 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:08:22,816 - __main__ - INFO - Saved debug visualization to debug_face_1743419302.jpg
+2025-03-31 13:08:22,821 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:08:22,825 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:08:22,829 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:08:22,838 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:08:22] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:08:22,842 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:08:22] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:08:24,025 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:08:24,126 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:08:24,180 - __main__ - INFO - Image decoded successfully, shape: (697, 450, 3)
+2025-03-31 13:08:24,186 - __main__ - INFO - Analyzing face in image of size 450x697
+2025-03-31 13:08:24,240 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:08:24,242 - __main__ - INFO - Face Height: 289.12 pixels
+2025-03-31 13:08:24,242 - __main__ - INFO - Forehead Width: 216.41 pixels
+2025-03-31 13:08:24,244 - __main__ - INFO - Cheekbone Width: 204.57 pixels
+2025-03-31 13:08:24,244 - __main__ - INFO - Jaw Width: 225.68 pixels
+2025-03-31 13:08:24,245 - __main__ - INFO - Eye Distance: 56.95 pixels
+2025-03-31 13:08:24,245 - __main__ - INFO - Eye Width: 155.16 pixels
+2025-03-31 13:08:24,247 - __main__ - INFO - Jaw Angle: 113.09 degrees
+2025-03-31 13:08:24,249 - __main__ - INFO - Jaw Curvature: 0.2018
+2025-03-31 13:08:24,251 - __main__ - INFO - Chin to Cheek Ratio: 1.10
+2025-03-31 13:08:24,251 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:08:24,253 - __main__ - INFO - Width/Height Ratio: 0.78
+2025-03-31 13:08:24,253 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 13:08:24,253 - __main__ - INFO - Cheekbone Ratio: 0.91
+2025-03-31 13:08:24,253 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:08:24,255 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:08:24,255 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:08:24,255 - __main__ - INFO - - Width/height ratio: 0.78 < 0.8 (longer face)
+2025-03-31 13:08:24,257 - __main__ - INFO - - Jaw angle: 113.09 < 160 (angular jaw)
+2025-03-31 13:08:24,257 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.15
+2025-03-31 13:08:24,257 - __main__ - INFO - - Cheekbone to jaw difference: 0.09 < 0.15
+2025-03-31 13:08:24,261 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:08:24,308 - __main__ - INFO - Saved debug visualization to debug_face_1743419304.jpg
+2025-03-31 13:08:24,319 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:08:24,321 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:08:24,325 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:08:24] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:09:08,859 - __main__ - INFO - Received health check request
+2025-03-31 13:09:08,876 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:09:08] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:09:09,076 - __main__ - INFO - Received health check request
+2025-03-31 13:09:09,077 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:09:09] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:10:47,470 - __main__ - INFO - Received health check request
+2025-03-31 13:10:47,470 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:10:47] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:10:47,734 - __main__ - INFO - Received health check request
+2025-03-31 13:10:47,736 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:10:47] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:10:48,749 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:10:48] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:10:49,064 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:10:49,069 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:10:49,082 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:10:49,087 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:10:49,109 - __main__ - INFO - Image decoded successfully, shape: (1514, 1000, 3)
+2025-03-31 13:10:49,116 - __main__ - INFO - Analyzing face in image of size 1000x1514
+2025-03-31 13:10:49,125 - __main__ - INFO - Image decoded successfully, shape: (1514, 1000, 3)
+2025-03-31 13:10:49,131 - __main__ - INFO - Analyzing face in image of size 1000x1514
+2025-03-31 13:10:49,161 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:10:49,162 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:10:49,162 - __main__ - INFO - Face Height: 841.51 pixels
+2025-03-31 13:10:49,165 - __main__ - INFO - Forehead Width: 612.29 pixels
+2025-03-31 13:10:49,165 - __main__ - INFO - Face Height: 841.51 pixels
+2025-03-31 13:10:49,166 - __main__ - INFO - Cheekbone Width: 572.62 pixels
+2025-03-31 13:10:49,166 - __main__ - INFO - Forehead Width: 612.29 pixels
+2025-03-31 13:10:49,166 - __main__ - INFO - Jaw Width: 602.33 pixels
+2025-03-31 13:10:49,167 - __main__ - INFO - Cheekbone Width: 572.62 pixels
+2025-03-31 13:10:49,167 - __main__ - INFO - Eye Distance: 169.70 pixels
+2025-03-31 13:10:49,167 - __main__ - INFO - Jaw Width: 602.33 pixels
+2025-03-31 13:10:49,167 - __main__ - INFO - Eye Width: 454.57 pixels
+2025-03-31 13:10:49,169 - __main__ - INFO - Eye Distance: 169.70 pixels
+2025-03-31 13:10:49,169 - __main__ - INFO - Jaw Angle: 115.27 degrees
+2025-03-31 13:10:49,169 - __main__ - INFO - Eye Width: 454.57 pixels
+2025-03-31 13:10:49,169 - __main__ - INFO - Jaw Angle: 115.27 degrees
+2025-03-31 13:10:49,169 - __main__ - INFO - Jaw Curvature: 0.1966
+2025-03-31 13:10:49,169 - __main__ - INFO - Jaw Curvature: 0.1966
+2025-03-31 13:10:49,171 - __main__ - INFO - Chin to Cheek Ratio: 1.05
+2025-03-31 13:10:49,171 - __main__ - INFO - Chin to Cheek Ratio: 1.05
+2025-03-31 13:10:49,171 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:10:49,171 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:10:49,171 - __main__ - INFO - Width/Height Ratio: 0.73
+2025-03-31 13:10:49,171 - __main__ - INFO - Width/Height Ratio: 0.73
+2025-03-31 13:10:49,171 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 13:10:49,173 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 13:10:49,173 - __main__ - INFO - Cheekbone Ratio: 0.94
+2025-03-31 13:10:49,173 - __main__ - INFO - Cheekbone Ratio: 0.94
+2025-03-31 13:10:49,173 - __main__ - INFO - Jaw Ratio: 0.98
+2025-03-31 13:10:49,173 - __main__ - INFO - Jaw Ratio: 0.98
+2025-03-31 13:10:49,173 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:10:49,173 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:10:49,173 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:10:49,173 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:10:49,173 - __main__ - INFO - - Width/height ratio: 0.73 < 0.8 (longer face)
+2025-03-31 13:10:49,176 - __main__ - INFO - - Width/height ratio: 0.73 < 0.8 (longer face)
+2025-03-31 13:10:49,176 - __main__ - INFO - - Jaw angle: 115.27 < 160 (angular jaw)
+2025-03-31 13:10:49,176 - __main__ - INFO - - Jaw angle: 115.27 < 160 (angular jaw)
+2025-03-31 13:10:49,176 - __main__ - INFO - - Forehead to jaw difference: 0.02 < 0.15
+2025-03-31 13:10:49,176 - __main__ - INFO - - Forehead to jaw difference: 0.02 < 0.15
+2025-03-31 13:10:49,181 - __main__ - INFO - - Cheekbone to jaw difference: 0.05 < 0.15
+2025-03-31 13:10:49,183 - __main__ - INFO - - Cheekbone to jaw difference: 0.05 < 0.15
+2025-03-31 13:10:49,183 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:10:49,183 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:10:49,232 - __main__ - INFO - Saved debug visualization to debug_face_1743419449.jpg
+2025-03-31 13:10:49,232 - __main__ - INFO - Saved debug visualization to debug_face_1743419449.jpg
+2025-03-31 13:10:49,236 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:10:49,240 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:10:49,240 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:10:49,240 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:10:49,251 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:10:49] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:10:49,255 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:10:49] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:10:49,935 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:10:49,985 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:10:50,339 - __main__ - INFO - Image decoded successfully, shape: (1514, 1000, 3)
+2025-03-31 13:10:50,356 - __main__ - INFO - Analyzing face in image of size 1000x1514
+2025-03-31 13:10:50,419 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:10:50,421 - __main__ - INFO - Face Height: 841.51 pixels
+2025-03-31 13:10:50,423 - __main__ - INFO - Forehead Width: 612.29 pixels
+2025-03-31 13:10:50,423 - __main__ - INFO - Cheekbone Width: 572.62 pixels
+2025-03-31 13:10:50,425 - __main__ - INFO - Jaw Width: 602.33 pixels
+2025-03-31 13:10:50,429 - __main__ - INFO - Eye Distance: 169.70 pixels
+2025-03-31 13:10:50,430 - __main__ - INFO - Eye Width: 454.57 pixels
+2025-03-31 13:10:50,430 - __main__ - INFO - Jaw Angle: 115.27 degrees
+2025-03-31 13:10:50,468 - __main__ - INFO - Jaw Curvature: 0.1966
+2025-03-31 13:10:50,474 - __main__ - INFO - Chin to Cheek Ratio: 1.05
+2025-03-31 13:10:50,474 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:10:50,476 - __main__ - INFO - Width/Height Ratio: 0.73
+2025-03-31 13:10:50,476 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 13:10:50,484 - __main__ - INFO - Cheekbone Ratio: 0.94
+2025-03-31 13:10:50,485 - __main__ - INFO - Jaw Ratio: 0.98
+2025-03-31 13:10:50,485 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:10:50,486 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:10:50,486 - __main__ - INFO - - Width/height ratio: 0.73 < 0.8 (longer face)
+2025-03-31 13:10:50,487 - __main__ - INFO - - Jaw angle: 115.27 < 160 (angular jaw)
+2025-03-31 13:10:50,488 - __main__ - INFO - - Forehead to jaw difference: 0.02 < 0.15
+2025-03-31 13:10:50,488 - __main__ - INFO - - Cheekbone to jaw difference: 0.05 < 0.15
+2025-03-31 13:10:50,489 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:10:50,885 - __main__ - INFO - Saved debug visualization to debug_face_1743419450.jpg
+2025-03-31 13:10:50,900 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:10:50,972 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:10:51,008 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:10:51] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:11:20,359 - __main__ - INFO - Received health check request
+2025-03-31 13:11:20,367 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:20] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:11:20,609 - __main__ - INFO - Received health check request
+2025-03-31 13:11:20,614 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:20] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:11:21,555 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:21] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:11:21,868 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:21] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:11:21,869 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:11:21,873 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:11:21,876 - __main__ - INFO - Image decoded successfully, shape: (392, 306, 3)
+2025-03-31 13:11:21,882 - __main__ - INFO - Analyzing face in image of size 306x392
+2025-03-31 13:11:21,902 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:11:21,902 - __main__ - INFO - Face Height: 196.91 pixels
+2025-03-31 13:11:21,902 - __main__ - INFO - Forehead Width: 141.60 pixels
+2025-03-31 13:11:21,903 - __main__ - INFO - Cheekbone Width: 131.57 pixels
+2025-03-31 13:11:21,903 - __main__ - INFO - Jaw Width: 149.67 pixels
+2025-03-31 13:11:21,903 - __main__ - INFO - Eye Distance: 37.04 pixels
+2025-03-31 13:11:21,903 - __main__ - INFO - Eye Width: 103.50 pixels
+2025-03-31 13:11:21,903 - __main__ - INFO - Jaw Angle: 118.98 degrees
+2025-03-31 13:11:21,903 - __main__ - INFO - Jaw Curvature: 0.1549
+2025-03-31 13:11:21,903 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 13:11:21,903 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:11:21,903 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 13:11:21,903 - __main__ - INFO - Forehead Ratio: 0.95
+2025-03-31 13:11:21,903 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:11:21,903 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:11:21,903 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:11:21,903 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:11:21,903 - __main__ - INFO - - Width/height ratio: 0.76 < 0.8 (longer face)
+2025-03-31 13:11:21,903 - __main__ - INFO - - Jaw angle: 118.98 < 160 (angular jaw)
+2025-03-31 13:11:21,903 - __main__ - INFO - - Forehead to jaw difference: 0.05 < 0.15
+2025-03-31 13:11:21,903 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 13:11:21,903 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:11:21,916 - __main__ - INFO - Saved debug visualization to debug_face_1743419481.jpg
+2025-03-31 13:11:21,918 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:11:21,919 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:11:21,921 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:21] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:11:22,186 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:11:22,186 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:11:22,189 - __main__ - INFO - Image decoded successfully, shape: (392, 306, 3)
+2025-03-31 13:11:22,189 - __main__ - INFO - Analyzing face in image of size 306x392
+2025-03-31 13:11:22,202 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:11:22,202 - __main__ - INFO - Face Height: 196.91 pixels
+2025-03-31 13:11:22,202 - __main__ - INFO - Forehead Width: 141.60 pixels
+2025-03-31 13:11:22,202 - __main__ - INFO - Cheekbone Width: 131.57 pixels
+2025-03-31 13:11:22,202 - __main__ - INFO - Jaw Width: 149.67 pixels
+2025-03-31 13:11:22,202 - __main__ - INFO - Eye Distance: 37.04 pixels
+2025-03-31 13:11:22,202 - __main__ - INFO - Eye Width: 103.50 pixels
+2025-03-31 13:11:22,202 - __main__ - INFO - Jaw Angle: 118.98 degrees
+2025-03-31 13:11:22,202 - __main__ - INFO - Jaw Curvature: 0.1549
+2025-03-31 13:11:22,202 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 13:11:22,202 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:11:22,202 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 13:11:22,202 - __main__ - INFO - Forehead Ratio: 0.95
+2025-03-31 13:11:22,216 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:11:22,216 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:11:22,216 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:11:22,216 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:11:22,216 - __main__ - INFO - - Width/height ratio: 0.76 < 0.8 (longer face)
+2025-03-31 13:11:22,216 - __main__ - INFO - - Jaw angle: 118.98 < 160 (angular jaw)
+2025-03-31 13:11:22,216 - __main__ - INFO - - Forehead to jaw difference: 0.05 < 0.15
+2025-03-31 13:11:22,216 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 13:11:22,216 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:11:22,224 - __main__ - INFO - Saved debug visualization to debug_face_1743419482.jpg
+2025-03-31 13:11:22,226 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:11:22,226 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:11:22,228 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:22] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:11:23,145 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:11:23,167 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:11:23,200 - __main__ - INFO - Image decoded successfully, shape: (392, 306, 3)
+2025-03-31 13:11:23,211 - __main__ - INFO - Analyzing face in image of size 306x392
+2025-03-31 13:11:23,278 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:11:23,278 - __main__ - INFO - Face Height: 196.91 pixels
+2025-03-31 13:11:23,284 - __main__ - INFO - Forehead Width: 141.60 pixels
+2025-03-31 13:11:23,285 - __main__ - INFO - Cheekbone Width: 131.57 pixels
+2025-03-31 13:11:23,287 - __main__ - INFO - Jaw Width: 149.67 pixels
+2025-03-31 13:11:23,293 - __main__ - INFO - Eye Distance: 37.04 pixels
+2025-03-31 13:11:23,293 - __main__ - INFO - Eye Width: 103.50 pixels
+2025-03-31 13:11:23,293 - __main__ - INFO - Jaw Angle: 118.98 degrees
+2025-03-31 13:11:23,295 - __main__ - INFO - Jaw Curvature: 0.1549
+2025-03-31 13:11:23,295 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 13:11:23,295 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:11:23,295 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 13:11:23,312 - __main__ - INFO - Forehead Ratio: 0.95
+2025-03-31 13:11:23,325 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:11:23,326 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:11:23,326 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:11:23,326 - __main__ - INFO - OBLONG: Longer face with angular jaw and similar widths
+2025-03-31 13:11:23,326 - __main__ - INFO - - Width/height ratio: 0.76 < 0.8 (longer face)
+2025-03-31 13:11:23,326 - __main__ - INFO - - Jaw angle: 118.98 < 160 (angular jaw)
+2025-03-31 13:11:23,344 - __main__ - INFO - - Forehead to jaw difference: 0.05 < 0.15
+2025-03-31 13:11:23,344 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 13:11:23,344 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 13:11:23,379 - __main__ - INFO - Saved debug visualization to debug_face_1743419483.jpg
+2025-03-31 13:11:23,395 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 13:11:23,409 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:11:23,424 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:11:23] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:17:26,168 - __main__ - INFO - Received health check request
+2025-03-31 13:17:26,170 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:17:26] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:17:26,405 - __main__ - INFO - Received health check request
+2025-03-31 13:17:26,408 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:17:26] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:20:16,427 - __main__ - INFO - Received health check request
+2025-03-31 13:20:16,429 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:20:16] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:20:16,711 - __main__ - INFO - Received health check request
+2025-03-31 13:20:16,713 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:20:16] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:21:24,004 - __main__ - INFO - Starting server on port 5000
+2025-03-31 13:21:24,392 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 13:21:24,406 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 13:25:36,912 - __main__ - INFO - Received health check request
+2025-03-31 13:25:36,941 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:25:36] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:25:37,163 - __main__ - INFO - Received health check request
+2025-03-31 13:25:37,173 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:25:37] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:26:16,380 - __main__ - INFO - Received health check request
+2025-03-31 13:26:16,397 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:26:16] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:26:16,842 - __main__ - INFO - Received health check request
+2025-03-31 13:26:16,860 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:26:16] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:44:55,070 - __main__ - INFO - Starting server on port 5000
+2025-03-31 13:44:55,150 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 13:44:55,153 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 13:45:03,555 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:03] "GET / HTTP/1.1" 200 -
+2025-03-31 13:45:03,705 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 13:45:18,446 - __main__ - INFO - Received health check request
+2025-03-31 13:45:18,451 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:45:18,711 - __main__ - INFO - Received health check request
+2025-03-31 13:45:18,723 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:45:52,784 - __main__ - INFO - Received health check request
+2025-03-31 13:45:52,784 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:52] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:45:53,115 - __main__ - INFO - Received health check request
+2025-03-31 13:45:53,117 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:53] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:45:54,365 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:54] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:45:54,691 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:54] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:45:54,723 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:45:54,751 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:45:55,027 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:45:55,096 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:45:55,112 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:45:55,162 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:45:55,248 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:45:55,278 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:45:55,291 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:55] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:45:55,743 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:45:55,883 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:45:56,063 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:45:56,072 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:45:56,081 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:56] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:45:56,083 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:45:56,128 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:45:56,742 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:45:56,776 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:45:56,914 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:45:56,926 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:45:56,963 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:56] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:45:59,233 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:45:59,263 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:45:59,285 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:45:59,330 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:45:59,784 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:45:59,801 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:45:59,809 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:45:59,916 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:45:59,927 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:45:59,965 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:45:59,983 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:45:59] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:45:59,992 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:46:00,017 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:46:00,181 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:00] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:46:00,934 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:00] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:46:01,249 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:01] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:46:01,265 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:46:01,285 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:46:01,611 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:46:01,645 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:46:01,659 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:46:01,830 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:46:01,875 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:46:01,884 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:46:01,896 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:01] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:46:01,966 - __main__ - INFO - Image decoded successfully, shape: (1080, 1920, 3)
+2025-03-31 13:46:01,979 - __main__ - INFO - Analyzing face in image of size 1920x1080
+2025-03-31 13:46:02,125 - __main__ - WARNING - No face detected in the image
+2025-03-31 13:46:02,131 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 13:46:02,195 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:02] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 13:46:12,708 - __main__ - INFO - Received health check request
+2025-03-31 13:46:12,713 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:12] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:46:12,860 - __main__ - INFO - Received health check request
+2025-03-31 13:46:12,862 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:12] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:46:41,303 - __main__ - INFO - Received health check request
+2025-03-31 13:46:41,314 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:41] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:46:41,673 - __main__ - INFO - Received health check request
+2025-03-31 13:46:41,675 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:41] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:46:42,815 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:42] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:46:43,135 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:46:43,137 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:46:43,156 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:46:43,160 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:46:43,265 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 13:46:43,288 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 13:46:43,299 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 13:46:43,310 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 13:46:43,368 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:46:43,370 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:46:43,370 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 13:46:43,370 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 13:46:43,378 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 13:46:43,378 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 13:46:43,384 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 13:46:43,386 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 13:46:43,386 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 13:46:43,386 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 13:46:43,389 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 13:46:43,389 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 13:46:43,390 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 13:46:43,390 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 13:46:43,390 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 13:46:43,392 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 13:46:43,392 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 13:46:43,392 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 13:46:43,394 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 13:46:43,394 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 13:46:43,394 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 13:46:43,396 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 13:46:43,396 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 13:46:43,396 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 13:46:43,414 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:46:43,427 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 13:46:43,436 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:46:43,442 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 13:46:43,443 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 13:46:43,444 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:46:43,445 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 13:46:43,445 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:46:43,445 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:46:43,446 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:46:43,446 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:46:43,446 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 13:46:43,446 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:46:43,447 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 13:46:43,448 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 13:46:43,448 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 13:46:43,448 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 13:46:43,448 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 13:46:43,449 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 13:46:43,449 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 13:46:43,450 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 13:46:43,450 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 13:46:43,450 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 13:46:43,466 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 13:46:43,582 - __main__ - INFO - Saved debug visualization to debug_face_1743421603.jpg
+2025-03-31 13:46:43,598 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 13:46:43,598 - __main__ - INFO - Saved debug visualization to debug_face_1743421603.jpg
+2025-03-31 13:46:43,604 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:46:43,618 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 13:46:43,628 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:43] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:46:43,636 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:46:43,644 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:43] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:46:44,047 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:46:44,049 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:46:44,534 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 13:46:44,670 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 13:46:44,863 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:46:44,870 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 13:46:44,886 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 13:46:44,891 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 13:46:44,893 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 13:46:44,926 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 13:46:44,938 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 13:46:44,942 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 13:46:44,944 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 13:46:44,966 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 13:46:44,985 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 13:46:44,985 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 13:46:44,985 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:46:44,985 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 13:46:44,987 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 13:46:44,987 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:46:44,987 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:46:44,987 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:46:45,010 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 13:46:45,032 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 13:46:45,096 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 13:46:45,132 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 13:46:45,166 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 13:46:45,185 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 13:46:45,535 - __main__ - INFO - Saved debug visualization to debug_face_1743421605.jpg
+2025-03-31 13:46:45,686 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 13:46:45,706 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:46:45,754 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:46:45] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:47:43,284 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:47:43] "OPTIONS /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:47:43,540 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:47:43,542 - __main__ - INFO - Getting more recommendations for face shape: Square, excluding IDs: [1, 4, 6]
+2025-03-31 13:47:43,546 - __main__ - INFO - Returning 3 more recommendations
+2025-03-31 13:47:43,546 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:47:43] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:47:51,377 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:47:51] "OPTIONS /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:47:51,707 - __main__ - INFO - Received more-recommendations request
+2025-03-31 13:47:51,707 - __main__ - INFO - Getting more recommendations for face shape: Square, excluding IDs: [1, 4, 6, 11, 12, 15]
+2025-03-31 13:47:51,707 - __main__ - INFO - Returning 2 more recommendations
+2025-03-31 13:47:51,713 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:47:51] "POST /api/more-recommendations HTTP/1.1" 200 -
+2025-03-31 13:49:16,768 - __main__ - INFO - Received health check request
+2025-03-31 13:49:16,832 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:49:16] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:49:17,028 - __main__ - INFO - Received health check request
+2025-03-31 13:49:17,030 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:49:17] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:51:48,728 - __main__ - INFO - Received health check request
+2025-03-31 13:51:48,738 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:48] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:51:48,995 - __main__ - INFO - Received health check request
+2025-03-31 13:51:49,002 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:49] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 13:51:49,906 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:49] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:51:50,227 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:50] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:51:50,315 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:51:50,331 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:51:50,494 - __main__ - INFO - Image decoded successfully, shape: (1990, 1500, 3)
+2025-03-31 13:51:50,498 - __main__ - INFO - Analyzing face in image of size 1500x1990
+2025-03-31 13:51:50,544 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:51:50,564 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:51:50,582 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:51:50,602 - __main__ - INFO - Face Height: 837.25 pixels
+2025-03-31 13:51:50,604 - __main__ - INFO - Forehead Width: 608.93 pixels
+2025-03-31 13:51:50,604 - __main__ - INFO - Cheekbone Width: 562.58 pixels
+2025-03-31 13:51:50,604 - __main__ - INFO - Jaw Width: 636.24 pixels
+2025-03-31 13:51:50,604 - __main__ - INFO - Eye Distance: 170.87 pixels
+2025-03-31 13:51:50,610 - __main__ - INFO - Eye Width: 443.01 pixels
+2025-03-31 13:51:50,616 - __main__ - INFO - Jaw Angle: 120.38 degrees
+2025-03-31 13:51:50,618 - __main__ - INFO - Jaw Curvature: 0.1586
+2025-03-31 13:51:50,618 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 13:51:50,620 - __main__ - INFO - Chin to Cheek Ratio: 1.13
+2025-03-31 13:51:50,621 - __main__ - INFO - Roundness Score: 1.55
+2025-03-31 13:51:50,621 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:51:50,624 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 13:51:50,624 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 13:51:50,624 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:51:50,628 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:51:50,638 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:51:50,647 - __main__ - INFO - OVAL: Default face shape (no other conditions met)
+2025-03-31 13:51:50,665 - __main__ - INFO - - Width/height ratio: 0.76
+2025-03-31 13:51:50,693 - __main__ - INFO - - Forehead ratio: 0.96
+2025-03-31 13:51:50,695 - __main__ - INFO - - Cheekbone ratio: 0.88
+2025-03-31 13:51:50,695 - __main__ - INFO - - Jaw ratio: 1.00
+2025-03-31 13:51:50,695 - __main__ - INFO - - Jaw angle: 120.38 degrees
+2025-03-31 13:51:50,697 - __main__ - INFO - - Jaw curvature: 0.1586
+2025-03-31 13:51:50,697 - __main__ - INFO - - Roundness score: 1.55
+2025-03-31 13:51:50,697 - __main__ - INFO - Final determined face shape: Oval
+2025-03-31 13:51:50,874 - __main__ - INFO - Image decoded successfully, shape: (1990, 1500, 3)
+2025-03-31 13:51:50,892 - __main__ - INFO - Analyzing face in image of size 1500x1990
+2025-03-31 13:51:50,896 - __main__ - INFO - Saved debug visualization to debug_face_1743421910.jpg
+2025-03-31 13:51:50,908 - __main__ - INFO - Face analysis successful, detected shape: Oval
+2025-03-31 13:51:50,912 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:51:50,974 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:50] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:51:51,078 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:51:51,140 - __main__ - INFO - Face Height: 837.25 pixels
+2025-03-31 13:51:51,187 - __main__ - INFO - Forehead Width: 608.93 pixels
+2025-03-31 13:51:51,198 - __main__ - INFO - Cheekbone Width: 562.58 pixels
+2025-03-31 13:51:51,210 - __main__ - INFO - Jaw Width: 636.24 pixels
+2025-03-31 13:51:51,224 - __main__ - INFO - Eye Distance: 170.87 pixels
+2025-03-31 13:51:51,342 - __main__ - INFO - Eye Width: 443.01 pixels
+2025-03-31 13:51:51,376 - __main__ - INFO - Jaw Angle: 120.38 degrees
+2025-03-31 13:51:51,462 - __main__ - INFO - Jaw Curvature: 0.1586
+2025-03-31 13:51:51,497 - __main__ - INFO - Received analyze-face request
+2025-03-31 13:51:51,513 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 13:51:51,564 - __main__ - INFO - Chin to Cheek Ratio: 1.13
+2025-03-31 13:51:51,605 - __main__ - INFO - Processing image from base64 data
+2025-03-31 13:51:51,774 - __main__ - INFO - Roundness Score: 1.55
+2025-03-31 13:51:51,846 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:51:51,854 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 13:51:51,859 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 13:51:51,886 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:51:51,893 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:51:51,904 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:51:51,910 - __main__ - INFO - OVAL: Default face shape (no other conditions met)
+2025-03-31 13:51:51,930 - __main__ - INFO - - Width/height ratio: 0.76
+2025-03-31 13:51:51,936 - __main__ - INFO - - Forehead ratio: 0.96
+2025-03-31 13:51:51,938 - __main__ - INFO - - Cheekbone ratio: 0.88
+2025-03-31 13:51:51,959 - __main__ - INFO - - Jaw ratio: 1.00
+2025-03-31 13:51:51,968 - __main__ - INFO - - Jaw angle: 120.38 degrees
+2025-03-31 13:51:51,970 - __main__ - INFO - - Jaw curvature: 0.1586
+2025-03-31 13:51:51,973 - __main__ - INFO - - Roundness score: 1.55
+2025-03-31 13:51:51,975 - __main__ - INFO - Final determined face shape: Oval
+2025-03-31 13:51:52,296 - __main__ - INFO - Image decoded successfully, shape: (1990, 1500, 3)
+2025-03-31 13:51:52,326 - __main__ - INFO - Saved debug visualization to debug_face_1743421911.jpg
+2025-03-31 13:51:52,423 - __main__ - INFO - Face analysis successful, detected shape: Oval
+2025-03-31 13:51:52,429 - __main__ - INFO - Analyzing face in image of size 1500x1990
+2025-03-31 13:51:52,467 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:51:52,484 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:52] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 13:51:52,546 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 13:51:52,556 - __main__ - INFO - Face Height: 837.25 pixels
+2025-03-31 13:51:52,563 - __main__ - INFO - Forehead Width: 608.93 pixels
+2025-03-31 13:51:52,567 - __main__ - INFO - Cheekbone Width: 562.58 pixels
+2025-03-31 13:51:52,574 - __main__ - INFO - Jaw Width: 636.24 pixels
+2025-03-31 13:51:52,624 - __main__ - INFO - Eye Distance: 170.87 pixels
+2025-03-31 13:51:52,627 - __main__ - INFO - Eye Width: 443.01 pixels
+2025-03-31 13:51:52,629 - __main__ - INFO - Jaw Angle: 120.38 degrees
+2025-03-31 13:51:52,631 - __main__ - INFO - Jaw Curvature: 0.1586
+2025-03-31 13:51:52,633 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 13:51:52,634 - __main__ - INFO - Chin to Cheek Ratio: 1.13
+2025-03-31 13:51:52,638 - __main__ - INFO - Roundness Score: 1.55
+2025-03-31 13:51:52,644 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 13:51:52,646 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 13:51:52,650 - __main__ - INFO - Forehead Ratio: 0.96
+2025-03-31 13:51:52,662 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 13:51:52,664 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 13:51:52,666 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 13:51:52,668 - __main__ - INFO - OVAL: Default face shape (no other conditions met)
+2025-03-31 13:51:52,670 - __main__ - INFO - - Width/height ratio: 0.76
+2025-03-31 13:51:52,670 - __main__ - INFO - - Forehead ratio: 0.96
+2025-03-31 13:51:52,670 - __main__ - INFO - - Cheekbone ratio: 0.88
+2025-03-31 13:51:52,672 - __main__ - INFO - - Jaw ratio: 1.00
+2025-03-31 13:51:52,673 - __main__ - INFO - - Jaw angle: 120.38 degrees
+2025-03-31 13:51:52,673 - __main__ - INFO - - Jaw curvature: 0.1586
+2025-03-31 13:51:52,674 - __main__ - INFO - - Roundness score: 1.55
+2025-03-31 13:51:52,674 - __main__ - INFO - Final determined face shape: Oval
+2025-03-31 13:51:52,953 - __main__ - INFO - Saved debug visualization to debug_face_1743421912.jpg
+2025-03-31 13:51:53,016 - __main__ - INFO - Face analysis successful, detected shape: Oval
+2025-03-31 13:51:53,024 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 13:51:53,047 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 13:51:53] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:00:41,579 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:00:41] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-03-31 14:00:41,731 - __main__ - INFO - Received health check request
+2025-03-31 14:00:41,739 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:00:41] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:29:38,232 - __main__ - INFO - Starting server on port 5000
+2025-03-31 14:29:38,336 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 14:29:38,337 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 14:29:41,849 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:29:41] "GET / HTTP/1.1" 200 -
+2025-03-31 14:30:44,365 - __main__ - INFO - Received health check request
+2025-03-31 14:30:44,369 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:30:44] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:30:44,612 - __main__ - INFO - Received health check request
+2025-03-31 14:30:44,616 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:30:44] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:31:19,687 - __main__ - INFO - Received health check request
+2025-03-31 14:31:19,707 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:19] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:31:20,090 - __main__ - INFO - Received health check request
+2025-03-31 14:31:20,104 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:20] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:31:21,340 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:21] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:31:21,650 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:21] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:31:21,770 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:21,782 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:21,838 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:21,850 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:21,864 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:21,868 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:21,868 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:21] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:22,060 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:22,071 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:22,161 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:22,210 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:22,253 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:22,255 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:22,255 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:22] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:22,794 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:22,808 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:22,859 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:22,866 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:22,883 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:22,885 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:22,885 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:22] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:25,495 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:25,499 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:25,722 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:25,728 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:25,785 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:25,789 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:25,805 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:25] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:26,059 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:26,415 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:26,659 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:26,704 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:26,909 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:27,179 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:27,309 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:27] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:27,969 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:27] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:31:27,971 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:27] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:31:28,245 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:28,266 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:28,299 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:31:28,302 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:31:28,316 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:28,324 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:28,366 - __main__ - INFO - Image decoded successfully, shape: (587, 1000, 3)
+2025-03-31 14:31:28,374 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:28,378 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:28,509 - __main__ - INFO - Analyzing face in image of size 1000x587
+2025-03-31 14:31:28,528 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:28] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:28,689 - __main__ - WARNING - No face detected in the image
+2025-03-31 14:31:28,705 - __main__ - WARNING - Face analysis error: No face detected in the image. Please try again with a clearer photo showing a face.
+2025-03-31 14:31:28,725 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:28] "[31m[1mPOST /api/analyze-face HTTP/1.1[0m" 400 -
+2025-03-31 14:31:37,374 - __main__ - INFO - Received health check request
+2025-03-31 14:31:37,420 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:37] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:31:37,792 - __main__ - INFO - Received health check request
+2025-03-31 14:31:37,802 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:31:37] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:32:01,076 - __main__ - INFO - Received health check request
+2025-03-31 14:32:01,082 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:32:01] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:32:01,426 - __main__ - INFO - Received health check request
+2025-03-31 14:32:01,429 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:32:01] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 14:32:02,601 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:32:02] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:32:03,057 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:32:03,082 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:32:03,082 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:32:03,084 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:32:03,228 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 14:32:03,243 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 14:32:03,245 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 14:32:03,278 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 14:32:03,455 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 14:32:03,455 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 14:32:03,455 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 14:32:03,455 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 14:32:03,455 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 14:32:03,455 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 14:32:03,462 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 14:32:03,462 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 14:32:03,462 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 14:32:03,462 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 14:32:03,467 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 14:32:03,470 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 14:32:03,470 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 14:32:03,470 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 14:32:03,471 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 14:32:03,471 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 14:32:03,471 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 14:32:03,471 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 14:32:03,471 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 14:32:03,471 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 14:32:03,471 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 14:32:03,471 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 14:32:03,471 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 14:32:03,471 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 14:32:03,471 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 14:32:03,471 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 14:32:03,471 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 14:32:03,471 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 14:32:03,471 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 14:32:03,471 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 14:32:03,478 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 14:32:03,478 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 14:32:03,478 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 14:32:03,478 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 14:32:03,478 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 14:32:03,478 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 14:32:03,478 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 14:32:03,478 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 14:32:03,478 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 14:32:03,478 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 14:32:03,612 - __main__ - INFO - Saved debug visualization to debug_face_1743424323.jpg
+2025-03-31 14:32:03,642 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 14:32:03,644 - __main__ - INFO - Saved debug visualization to debug_face_1743424323.jpg
+2025-03-31 14:32:03,644 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 14:32:03,673 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 14:32:03,697 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:32:03] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:32:03,707 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 14:32:03,726 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:32:03] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 14:32:03,768 - __main__ - INFO - Received analyze-face request
+2025-03-31 14:32:03,840 - __main__ - INFO - Processing image from base64 data
+2025-03-31 14:32:05,396 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 14:32:05,725 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 14:32:05,861 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 14:32:05,861 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 14:32:05,863 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 14:32:05,863 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 14:32:05,863 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 14:32:05,863 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 14:32:05,865 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 14:32:05,865 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 14:32:05,865 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 14:32:05,881 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 14:32:05,891 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 14:32:05,891 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 14:32:05,891 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 14:32:05,891 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 14:32:05,893 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 14:32:05,893 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 14:32:05,893 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 14:32:05,893 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 14:32:05,895 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 14:32:05,895 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 14:32:05,897 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 14:32:05,897 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 14:32:05,897 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 14:32:05,909 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 14:32:06,025 - __main__ - INFO - Saved debug visualization to debug_face_1743424325.jpg
+2025-03-31 14:32:06,045 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 14:32:06,051 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 14:32:06,055 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 14:32:06] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:04:39,469 - __main__ - INFO - Received health check request
+2025-03-31 17:04:39,505 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:04:39] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:04:39,739 - __main__ - INFO - Received health check request
+2025-03-31 17:04:39,752 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:04:39] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:14:41,593 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:14:41] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-03-31 17:14:41,823 - __main__ - INFO - Received health check request
+2025-03-31 17:14:41,825 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:14:41] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:18:56,133 - __main__ - INFO - Received health check request
+2025-03-31 17:18:56,133 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:18:56] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:18:56,395 - __main__ - INFO - Received health check request
+2025-03-31 17:18:56,396 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:18:56] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:23:18,466 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:23:18] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-03-31 17:23:18,720 - __main__ - INFO - Received health check request
+2025-03-31 17:23:18,722 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:23:18] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:23:42,623 - __main__ - INFO - Starting server on port 5000
+2025-03-31 17:23:42,842 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.150:5000
+2025-03-31 17:23:42,843 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:23:48,149 - __main__ - INFO - Received health check request
+2025-03-31 17:23:48,152 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:23:48] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:23:48,415 - __main__ - INFO - Received health check request
+2025-03-31 17:23:48,419 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:23:48] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:24:09,366 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:09] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-03-31 17:24:09,714 - __main__ - INFO - Received health check request
+2025-03-31 17:24:09,776 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:09] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:24:10,599 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:10] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:24:10,637 - __main__ - INFO - Received analyze-face request
+2025-03-31 17:24:10,663 - __main__ - INFO - Processing image from base64 data
+2025-03-31 17:24:11,091 - __main__ - INFO - Image decoded successfully, shape: (1880, 2048, 3)
+2025-03-31 17:24:11,112 - __main__ - INFO - Analyzing face in image of size 2048x1880
+2025-03-31 17:24:11,168 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 17:24:11,169 - __main__ - INFO - Face Height: 969.82 pixels
+2025-03-31 17:24:11,169 - __main__ - INFO - Forehead Width: 740.56 pixels
+2025-03-31 17:24:11,169 - __main__ - INFO - Cheekbone Width: 685.24 pixels
+2025-03-31 17:24:11,170 - __main__ - INFO - Jaw Width: 709.42 pixels
+2025-03-31 17:24:11,170 - __main__ - INFO - Eye Distance: 207.64 pixels
+2025-03-31 17:24:11,170 - __main__ - INFO - Eye Width: 549.98 pixels
+2025-03-31 17:24:11,170 - __main__ - INFO - Jaw Angle: 112.82 degrees
+2025-03-31 17:24:11,171 - __main__ - INFO - Jaw Curvature: 0.1995
+2025-03-31 17:24:11,186 - __main__ - INFO - Cheek Fullness: 0.97
+2025-03-31 17:24:11,186 - __main__ - INFO - Chin to Cheek Ratio: 1.04
+2025-03-31 17:24:11,186 - __main__ - INFO - Roundness Score: 2.01
+2025-03-31 17:24:11,188 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 17:24:11,188 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 17:24:11,190 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 17:24:11,192 - __main__ - INFO - Cheekbone Ratio: 0.93
+2025-03-31 17:24:11,194 - __main__ - INFO - Jaw Ratio: 0.96
+2025-03-31 17:24:11,194 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 17:24:11,194 - __main__ - INFO - OBLONG: Longer face with similar widths
+2025-03-31 17:24:11,194 - __main__ - INFO - - Width/height ratio: 0.76 < 0.8 (longer face)
+2025-03-31 17:24:11,194 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.2
+2025-03-31 17:24:11,194 - __main__ - INFO - - Cheekbone to jaw difference: 0.03 < 0.2
+2025-03-31 17:24:11,196 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 17:24:11,453 - __main__ - INFO - Saved debug visualization to debug_face_1743434651.jpg
+2025-03-31 17:24:11,472 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 17:24:11,478 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 17:24:11,505 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:11] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:24:12,271 - __main__ - INFO - Received analyze-face request
+2025-03-31 17:24:12,273 - __main__ - INFO - Processing image from base64 data
+2025-03-31 17:24:12,593 - __main__ - INFO - Image decoded successfully, shape: (1880, 2048, 3)
+2025-03-31 17:24:12,608 - __main__ - INFO - Analyzing face in image of size 2048x1880
+2025-03-31 17:24:12,744 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 17:24:12,744 - __main__ - INFO - Face Height: 969.82 pixels
+2025-03-31 17:24:12,744 - __main__ - INFO - Forehead Width: 740.56 pixels
+2025-03-31 17:24:12,746 - __main__ - INFO - Cheekbone Width: 685.24 pixels
+2025-03-31 17:24:12,754 - __main__ - INFO - Jaw Width: 709.42 pixels
+2025-03-31 17:24:12,754 - __main__ - INFO - Eye Distance: 207.64 pixels
+2025-03-31 17:24:12,756 - __main__ - INFO - Eye Width: 549.98 pixels
+2025-03-31 17:24:12,756 - __main__ - INFO - Jaw Angle: 112.82 degrees
+2025-03-31 17:24:12,760 - __main__ - INFO - Jaw Curvature: 0.1995
+2025-03-31 17:24:12,760 - __main__ - INFO - Cheek Fullness: 0.97
+2025-03-31 17:24:12,760 - __main__ - INFO - Chin to Cheek Ratio: 1.04
+2025-03-31 17:24:12,760 - __main__ - INFO - Roundness Score: 2.01
+2025-03-31 17:24:12,762 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 17:24:12,762 - __main__ - INFO - Width/Height Ratio: 0.76
+2025-03-31 17:24:12,762 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 17:24:12,762 - __main__ - INFO - Cheekbone Ratio: 0.93
+2025-03-31 17:24:12,771 - __main__ - INFO - Jaw Ratio: 0.96
+2025-03-31 17:24:12,771 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 17:24:12,771 - __main__ - INFO - OBLONG: Longer face with similar widths
+2025-03-31 17:24:12,771 - __main__ - INFO - - Width/height ratio: 0.76 < 0.8 (longer face)
+2025-03-31 17:24:12,771 - __main__ - INFO - - Forehead to jaw difference: 0.04 < 0.2
+2025-03-31 17:24:12,771 - __main__ - INFO - - Cheekbone to jaw difference: 0.03 < 0.2
+2025-03-31 17:24:12,775 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 17:24:12,971 - __main__ - INFO - Saved debug visualization to debug_face_1743434652.jpg
+2025-03-31 17:24:13,003 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 17:24:13,024 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 17:24:13,055 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:13] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:24:58,723 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:58] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-03-31 17:24:59,030 - __main__ - INFO - Received health check request
+2025-03-31 17:24:59,042 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:24:59] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:25:00,246 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:00] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:25:00,559 - __main__ - INFO - Received analyze-face request
+2025-03-31 17:25:00,567 - __main__ - INFO - Processing image from base64 data
+2025-03-31 17:25:00,598 - __main__ - INFO - Image decoded successfully, shape: (1514, 1000, 3)
+2025-03-31 17:25:00,608 - __main__ - INFO - Analyzing face in image of size 1000x1514
+2025-03-31 17:25:00,637 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 17:25:00,639 - __main__ - INFO - Face Height: 841.51 pixels
+2025-03-31 17:25:00,639 - __main__ - INFO - Forehead Width: 612.29 pixels
+2025-03-31 17:25:00,641 - __main__ - INFO - Cheekbone Width: 572.62 pixels
+2025-03-31 17:25:00,641 - __main__ - INFO - Jaw Width: 602.33 pixels
+2025-03-31 17:25:00,641 - __main__ - INFO - Eye Distance: 169.70 pixels
+2025-03-31 17:25:00,641 - __main__ - INFO - Eye Width: 454.57 pixels
+2025-03-31 17:25:00,641 - __main__ - INFO - Jaw Angle: 115.27 degrees
+2025-03-31 17:25:00,643 - __main__ - INFO - Jaw Curvature: 0.1966
+2025-03-31 17:25:00,643 - __main__ - INFO - Cheek Fullness: 0.95
+2025-03-31 17:25:00,643 - __main__ - INFO - Chin to Cheek Ratio: 1.05
+2025-03-31 17:25:00,643 - __main__ - INFO - Roundness Score: 1.90
+2025-03-31 17:25:00,643 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 17:25:00,643 - __main__ - INFO - Width/Height Ratio: 0.73
+2025-03-31 17:25:00,643 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 17:25:00,643 - __main__ - INFO - Cheekbone Ratio: 0.94
+2025-03-31 17:25:00,643 - __main__ - INFO - Jaw Ratio: 0.98
+2025-03-31 17:25:00,643 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 17:25:00,643 - __main__ - INFO - OBLONG: Longer face with similar widths
+2025-03-31 17:25:00,643 - __main__ - INFO - - Width/height ratio: 0.73 < 0.8 (longer face)
+2025-03-31 17:25:00,643 - __main__ - INFO - - Forehead to jaw difference: 0.02 < 0.2
+2025-03-31 17:25:00,643 - __main__ - INFO - - Cheekbone to jaw difference: 0.05 < 0.2
+2025-03-31 17:25:00,643 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 17:25:00,697 - __main__ - INFO - Saved debug visualization to debug_face_1743434700.jpg
+2025-03-31 17:25:00,704 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 17:25:00,706 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 17:25:00,712 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:00] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:25:01,410 - __main__ - INFO - Received analyze-face request
+2025-03-31 17:25:01,480 - __main__ - INFO - Processing image from base64 data
+2025-03-31 17:25:01,598 - __main__ - INFO - Image decoded successfully, shape: (1514, 1000, 3)
+2025-03-31 17:25:01,613 - __main__ - INFO - Analyzing face in image of size 1000x1514
+2025-03-31 17:25:01,655 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 17:25:01,656 - __main__ - INFO - Face Height: 841.51 pixels
+2025-03-31 17:25:01,657 - __main__ - INFO - Forehead Width: 612.29 pixels
+2025-03-31 17:25:01,658 - __main__ - INFO - Cheekbone Width: 572.62 pixels
+2025-03-31 17:25:01,658 - __main__ - INFO - Jaw Width: 602.33 pixels
+2025-03-31 17:25:01,658 - __main__ - INFO - Eye Distance: 169.70 pixels
+2025-03-31 17:25:01,659 - __main__ - INFO - Eye Width: 454.57 pixels
+2025-03-31 17:25:01,661 - __main__ - INFO - Jaw Angle: 115.27 degrees
+2025-03-31 17:25:01,661 - __main__ - INFO - Jaw Curvature: 0.1966
+2025-03-31 17:25:01,661 - __main__ - INFO - Cheek Fullness: 0.95
+2025-03-31 17:25:01,661 - __main__ - INFO - Chin to Cheek Ratio: 1.05
+2025-03-31 17:25:01,663 - __main__ - INFO - Roundness Score: 1.90
+2025-03-31 17:25:01,663 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 17:25:01,663 - __main__ - INFO - Width/Height Ratio: 0.73
+2025-03-31 17:25:01,663 - __main__ - INFO - Forehead Ratio: 1.00
+2025-03-31 17:25:01,663 - __main__ - INFO - Cheekbone Ratio: 0.94
+2025-03-31 17:25:01,663 - __main__ - INFO - Jaw Ratio: 0.98
+2025-03-31 17:25:01,665 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 17:25:01,665 - __main__ - INFO - OBLONG: Longer face with similar widths
+2025-03-31 17:25:01,665 - __main__ - INFO - - Width/height ratio: 0.73 < 0.8 (longer face)
+2025-03-31 17:25:01,665 - __main__ - INFO - - Forehead to jaw difference: 0.02 < 0.2
+2025-03-31 17:25:01,665 - __main__ - INFO - - Cheekbone to jaw difference: 0.05 < 0.2
+2025-03-31 17:25:01,665 - __main__ - INFO - Final determined face shape: Oblong
+2025-03-31 17:25:01,950 - __main__ - INFO - Saved debug visualization to debug_face_1743434701.jpg
+2025-03-31 17:25:01,973 - __main__ - INFO - Face analysis successful, detected shape: Oblong
+2025-03-31 17:25:01,974 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 17:25:01,996 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:01] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:25:35,281 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:35] "OPTIONS /api/health HTTP/1.1" 200 -
+2025-03-31 17:25:35,529 - __main__ - INFO - Received health check request
+2025-03-31 17:25:35,529 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:35] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:25:36,500 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:36] "OPTIONS /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:25:36,504 - __main__ - INFO - Received analyze-face request
+2025-03-31 17:25:36,510 - __main__ - INFO - Processing image from base64 data
+2025-03-31 17:25:36,543 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 17:25:36,559 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 17:25:36,586 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 17:25:36,586 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 17:25:36,586 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 17:25:36,592 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 17:25:36,592 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 17:25:36,592 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 17:25:36,592 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 17:25:36,592 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 17:25:36,592 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 17:25:36,592 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 17:25:36,592 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 17:25:36,592 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 17:25:36,592 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 17:25:36,592 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 17:25:36,592 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 17:25:36,592 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 17:25:36,592 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 17:25:36,592 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 17:25:36,592 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 17:25:36,592 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 17:25:36,592 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 17:25:36,592 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 17:25:36,592 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 17:25:36,592 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 17:25:36,656 - __main__ - INFO - Saved debug visualization to debug_face_1743434736.jpg
+2025-03-31 17:25:36,661 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 17:25:36,669 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 17:25:36,687 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:36] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:25:38,318 - __main__ - INFO - Received analyze-face request
+2025-03-31 17:25:38,326 - __main__ - INFO - Processing image from base64 data
+2025-03-31 17:25:38,376 - __main__ - INFO - Image decoded successfully, shape: (1500, 1200, 3)
+2025-03-31 17:25:38,385 - __main__ - INFO - Analyzing face in image of size 1200x1500
+2025-03-31 17:25:38,431 - __main__ - INFO - === FACE MEASUREMENTS ===
+2025-03-31 17:25:38,431 - __main__ - INFO - Face Height: 416.94 pixels
+2025-03-31 17:25:38,433 - __main__ - INFO - Forehead Width: 315.38 pixels
+2025-03-31 17:25:38,433 - __main__ - INFO - Cheekbone Width: 312.90 pixels
+2025-03-31 17:25:38,433 - __main__ - INFO - Jaw Width: 357.43 pixels
+2025-03-31 17:25:38,433 - __main__ - INFO - Eye Distance: 93.98 pixels
+2025-03-31 17:25:38,435 - __main__ - INFO - Eye Width: 244.87 pixels
+2025-03-31 17:25:38,435 - __main__ - INFO - Jaw Angle: 139.49 degrees
+2025-03-31 17:25:38,435 - __main__ - INFO - Jaw Curvature: 0.0929
+2025-03-31 17:25:38,435 - __main__ - INFO - Cheek Fullness: 0.88
+2025-03-31 17:25:38,437 - __main__ - INFO - Chin to Cheek Ratio: 1.14
+2025-03-31 17:25:38,437 - __main__ - INFO - Roundness Score: 1.08
+2025-03-31 17:25:38,437 - __main__ - INFO - === FACE RATIOS ===
+2025-03-31 17:25:38,444 - __main__ - INFO - Width/Height Ratio: 0.86
+2025-03-31 17:25:38,444 - __main__ - INFO - Forehead Ratio: 0.88
+2025-03-31 17:25:38,444 - __main__ - INFO - Cheekbone Ratio: 0.88
+2025-03-31 17:25:38,446 - __main__ - INFO - Jaw Ratio: 1.00
+2025-03-31 17:25:38,446 - __main__ - INFO - === FACE SHAPE DETERMINATION ===
+2025-03-31 17:25:38,446 - __main__ - INFO - SQUARE: Angular jaw with similar widths at forehead, cheekbones, and jaw
+2025-03-31 17:25:38,446 - __main__ - INFO - - Jaw angle: 139.49 < 155 (angular jaw)
+2025-03-31 17:25:38,448 - __main__ - INFO - - Forehead to jaw difference: 0.12 < 0.15
+2025-03-31 17:25:38,448 - __main__ - INFO - - Cheekbone to jaw difference: 0.12 < 0.15
+2025-03-31 17:25:38,450 - __main__ - INFO - - Width/height ratio: 0.14 < 0.2
+2025-03-31 17:25:38,450 - __main__ - INFO - Final determined face shape: Square
+2025-03-31 17:25:38,587 - __main__ - INFO - Saved debug visualization to debug_face_1743434738.jpg
+2025-03-31 17:25:38,705 - __main__ - INFO - Face analysis successful, detected shape: Square
+2025-03-31 17:25:38,820 - __main__ - INFO - Generated 3 recommendations
+2025-03-31 17:25:38,998 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:25:38] "POST /api/analyze-face HTTP/1.1" 200 -
+2025-03-31 17:27:27,099 - __main__ - INFO - Received health check request
+2025-03-31 17:27:27,099 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:27] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:27,386 - __main__ - INFO - Received health check request
+2025-03-31 17:27:27,402 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:27] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:29,928 - __main__ - INFO - Received health check request
+2025-03-31 17:27:29,928 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:29] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:30,250 - __main__ - INFO - Received health check request
+2025-03-31 17:27:30,251 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:30] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:31,717 - __main__ - INFO - Received health check request
+2025-03-31 17:27:31,721 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:31] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:32,048 - __main__ - INFO - Received health check request
+2025-03-31 17:27:32,048 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:32] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:36,753 - __main__ - INFO - Received health check request
+2025-03-31 17:27:36,753 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:36] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:37,084 - __main__ - INFO - Received health check request
+2025-03-31 17:27:37,085 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:37] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:40,020 - __main__ - INFO - Received health check request
+2025-03-31 17:27:40,020 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:40] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:27:40,365 - __main__ - INFO - Received health check request
+2025-03-31 17:27:40,365 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:27:40] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:28:06,250 - __main__ - INFO - Received health check request
+2025-03-31 17:28:06,256 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:28:06] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:28:06,623 - __main__ - INFO - Received health check request
+2025-03-31 17:28:06,625 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:28:06] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:38:04,574 - __main__ - INFO - Received health check request
+2025-03-31 17:38:04,611 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:38:04] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:43:04,790 - __main__ - INFO - Received health check request
+2025-03-31 17:43:04,790 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:43:04] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:48:04,799 - __main__ - INFO - Received health check request
+2025-03-31 17:48:04,799 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:48:04] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:53:04,791 - __main__ - INFO - Received health check request
+2025-03-31 17:53:04,791 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:53:04] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 17:58:45,794 - __main__ - INFO - Received health check request
+2025-03-31 17:58:45,794 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 17:58:45] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 18:03:45,839 - __main__ - INFO - Received health check request
+2025-03-31 18:03:45,845 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:03:45] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 18:08:45,779 - __main__ - INFO - Received health check request
+2025-03-31 18:08:45,781 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:08:45] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 18:13:45,798 - __main__ - INFO - Received health check request
+2025-03-31 18:13:45,802 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:13:45] "GET /api/health HTTP/1.1" 200 -
+2025-03-31 18:18:45,788 - __main__ - INFO - Received health check request
+2025-03-31 18:18:45,792 - werkzeug - INFO - 127.0.0.1 - - [31/Mar/2025 18:18:45] "GET /api/health HTTP/1.1" 200 -
+2025-04-01 17:35:50,244 - __main__ - INFO - Received health check request
+2025-04-01 17:35:50,271 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 17:35:50] "GET /api/health HTTP/1.1" 200 -
+2025-04-01 17:36:05,094 - __main__ - INFO - Received health check request
+2025-04-01 17:36:05,104 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:05] "GET /api/health HTTP/1.1" 200 -
+2025-04-01 17:36:05,494 - __main__ - INFO - Received health check request
+2025-04-01 17:36:05,522 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:05] "GET /api/health HTTP/1.1" 200 -
+2025-04-01 17:36:05,710 - __main__ - INFO - Received health check request
+2025-04-01 17:36:05,729 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:05] "GET /api/health HTTP/1.1" 200 -
+2025-04-01 17:36:05,877 - __main__ - INFO - Received health check request
+2025-04-01 17:36:05,888 - werkzeug - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:05] "GET /api/health HTTP/1.1" 200 -
