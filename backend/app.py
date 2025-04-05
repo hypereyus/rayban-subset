@@ -773,11 +773,7 @@ def more_recommendations_endpoint():
 @app.route('/api/health', methods=['GET'])
 def health_check():
   logger.info("Received health check request")
-  return jsonify({"status": "ok", "message": "Server is running"})
-
-@app.route('/health')
-def health_check():
-    return 'OK', 200
+  return jsonify({"status": 200, "message": "Server is running"})
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
